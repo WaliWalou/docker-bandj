@@ -1,5 +1,7 @@
 # Docker-bandj
 
+EN COURS - PAS FINI
+
 Présentation de notre projet docker consistant à déployer une plateforme de multimédia entièrement automatisé
 
 Nous aurons dans ce projet docker :
