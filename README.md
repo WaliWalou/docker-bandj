@@ -44,6 +44,9 @@ Les utilisateurs pourront alors accéder à leur bibliothèque de n'importe où 
 
 **Portainer** est une solution de gestion de conteneurs Docker qui offre une interface graphique conviviale pour simplifier le déploiement, la configuration et la maintenance des applications et services Docker. Portainer permet de gérer tout ce qui est rattaché aux conteneurs : réseaux, volumes, registres et autres ressources Docker, sans avoir besoin de maîtriser les commandes Docker en ligne de commande. En intégrant Portainer au projet projet, on peut gérer et superviser facilement l'ensemble de la stack Plex, Jackett, Sonarr, Radarr, Deluge et Tautulli à partir d'un seul et même tableau de bord.
 
+**Extra plus :** 
+
+**Telegram** un script bash a été intégré pour être exécuté par Deluge lorsqu'un téléchargement est terminé : un chatBot enverra directement une notification à l'utilisateur par l'application.
 
 # Inscription Plex
 
@@ -83,7 +86,7 @@ Créer deux bibliothèques : une bibliothèque "Films" et une bibliothèque "Sé
 
 http://deluge_bandj:8112/
 
-Mot de passe par défaut : deluge
+Mot de passe par défaut : **deluge**
 
 Ajouter les plugins "Label" et "Execute" dans les préférences :
 
@@ -93,17 +96,19 @@ Créer deux nouveaux labels pour Sonarr et Radarr :
 
 ![image](https://user-images.githubusercontent.com/100569015/235352950-dcb165dd-a063-4ffd-8d75-f835b21bf9c7.png)
 
-Ajouter le script de notification Telegram lorsqu'un téléchargement est terminé :
+Indiquer l'exécution du script de notification Telegram lorsqu'un téléchargement est terminé :
 
 ![image](https://user-images.githubusercontent.com/100569015/235353781-1985c7ce-a737-4669-af91-a81f93d1c62a.png)
+
+Copier/coller son chat ID et Token Telegram dans le script **telegram.sh** :
+
+![image](https://user-images.githubusercontent.com/100569015/235374145-fe6ad79a-64b4-40be-9607-e58ad37f926f.png)
+
 
 Configurer un proxy VPN (si disponible) :
 
 ![image](https://user-images.githubusercontent.com/100569015/235353660-e3f8efe2-604d-4fb9-85af-39b387217743.png)
 
-# Notification avec Telegram
-
-Deluge comprend un script shell maison qu'il exécute à chaque téléchargement terminé. Le script envoie une requête à un ChatBot Telegram afin de recevoir la notification directement sur son téléphone. Copier/coller son chat ID et Token Telegram dans le script 
 
 # Configuration Jackett
 
