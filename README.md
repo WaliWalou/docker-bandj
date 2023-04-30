@@ -76,6 +76,10 @@ Créer deux nouveaux labels pour Sonarr et Radarr :
 
 ![image](https://user-images.githubusercontent.com/100569015/235352950-dcb165dd-a063-4ffd-8d75-f835b21bf9c7.png)
 
+Ajouter le script de notification Telegram lorsqu'un téléchargement est terminé :
+
+![image](https://user-images.githubusercontent.com/100569015/235353781-1985c7ce-a737-4669-af91-a81f93d1c62a.png)
+
 Configurer un proxy VPN (si disponible) :
 
 ![image](https://user-images.githubusercontent.com/100569015/235353660-e3f8efe2-604d-4fb9-85af-39b387217743.png)
