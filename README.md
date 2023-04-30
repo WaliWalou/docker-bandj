@@ -38,6 +38,7 @@ Chaque film ou série aura droit à un dossier propre à son nom
 **Plex** va pouvoir récupérer et lire les fichier *.mp4* dans ses dossiers et les afficher dans sa bibliothèque de films et séries
 Les utilisateurs pourront alors accéder à leur bibliothèque de n'importe où en se connectant à ce compte Plex et regarder leur film préféré depuis un Google Chromecast ou un PC...
 
+
 **Extra :**
 
 **Tautulli** est un outil de surveillance et d'analyse dédié à **Plex Media Server**. Il permet de suivre les activités des utilisateurs, les statistiques d'utilisation, les historiques de lecture, et bien plus encore. Grâce à Tautulli, il est possible de garder un œil sur les performances du serveur Plex et d'assurer que les utilisateurs bénéficient de la meilleure expérience possible en matière de streaming.
@@ -47,6 +48,7 @@ Les utilisateurs pourront alors accéder à leur bibliothèque de n'importe où 
 **Extra plus :** 
 
 **ChatBot Telegram** permet de recevoir directement une notification par l'application Telegram lorsqu'un téléchargement est terminé : un script bash a été intégré pour être exécuté par Deluge.
+
 
 # Inscription Plex
 
@@ -61,6 +63,7 @@ Après avoir procédé à la création du compte Plex et s'y être connecté, il
 Coller le token dans le fichier "docker-compose.yml" à l'endroit prévu comme indiqué ci-dessous :
 
 ![image](https://user-images.githubusercontent.com/100569015/235352543-dd1e4e73-d83c-4b93-8bf1-60dc6e271727.png)
+
 
 # Déploiement des containers
 
@@ -83,6 +86,7 @@ Ouvrir la page web du serveur Plex : si la page de configuration ne s'affiche pa
 Créer deux bibliothèques : une bibliothèque "Films" et une bibliothèque "Séries" et faire pointer respectivement vers les chemins suivants :
 
 ![image](https://user-images.githubusercontent.com/100569015/235352317-7dc0d4be-dd41-4806-815b-6ba2ae99d41d.png)
+
 
 # Configuration Deluge
 
@@ -157,6 +161,8 @@ Après que le téléchargement ait fini, on retrouve le film automatiquement dan
 Notification Telegram reçue :
 
 ![image](https://user-images.githubusercontent.com/100569015/235374816-7fb9900f-cae2-4764-88b7-07cd48520b5b.png)
+
+
 
 # Extra avec Tautulli
 
