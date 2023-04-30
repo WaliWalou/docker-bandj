@@ -7,7 +7,7 @@ services:
       context: ./plex
     env_file: ./vars.env
     environment:
-      - PLEX_CLAIM=claim-XXXXXXXXXXXXX
+      - PLEX_CLAIM=claim-GpjyGRFCU7E715KKsZbH
       - ADVERTISE_IP=http://plex_bandj:32400/
     volumes:
       - ./BandJ/plex/config:/config
@@ -67,6 +67,8 @@ services:
     volumes:
       - ./BandJ/tautulli/config:/config
       - ./BandJ/plex/config/Library/Application Support/Plex Media Server/Logs:/logs
+    depends_on:
+      - plex
 
   portainer:
     image: portainer/portainer-ce:latest
