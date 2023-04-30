@@ -45,6 +45,8 @@ Les utilisateurs pourront alors accéder à leur bibliothèque de n'importe où 
 
 **Portainer** est une solution de gestion de conteneurs Docker qui offre une interface graphique conviviale pour simplifier le déploiement, la configuration et la maintenance des applications et services Docker. Portainer permet de gérer tout ce qui est rattaché aux conteneurs : réseaux, volumes, registres et autres ressources Docker, sans avoir besoin de maîtriser les commandes Docker en ligne de commande. En intégrant Portainer au projet projet, on peut gérer et superviser facilement l'ensemble de la stack Plex, Jackett, Sonarr, Radarr, Deluge et Tautulli à partir d'un seul et même tableau de bord.
 
+Attention, ne pas utiliser l'image benibee33/portainer_custom car l'image est bugué et le serveur web n'est pas fonctionnel. C'est pour cette raison que le fichier docker-compose appelle directement l'image officielle portainer/portainer-ce:latest
+
 **Extra plus :** 
 
 **ChatBot Telegram** permet de recevoir directement une notification par l'application Telegram lorsqu'un téléchargement est terminé : un script bash a été intégré pour être exécuté par Deluge.
