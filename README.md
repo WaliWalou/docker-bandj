@@ -1,7 +1,7 @@
 
-# Docker-BandJ
+# **Docker-BandJ**
 
-- Présentation du projet Docker de déploiement d'une plateforme multimédia automatisée. -
+**Présentation du projet Docker de déploiement d'une plateforme multimédia automatisée.**
 
 Dans ce projet on retrouve notamment :
 - **Plex** : Gestionnaire de bibliothèques films / séries
