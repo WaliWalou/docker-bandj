@@ -62,9 +62,11 @@ Coller le token dans le fichier "docker-compose.yml" à l'endroit prévu comme i
 
 ![image](https://user-images.githubusercontent.com/100569015/235352543-dd1e4e73-d83c-4b93-8bf1-60dc6e271727.png)
 
-# Déploiement
+# Déploiement des containers
 
-Cloner l'ensemble de l'arborescence et lancer le déploiement : **docker compose up -d**
+Pour déployer la stack, télécharger ou cloner avec git l'ensemble de l'arborescence.
+
+Lancer ensuite le déploiement : **docker compose up -d**
 
 **Note** : aucun container n'est mappé sur l'hôte, les containers communiquent entre eux via un réseau interne bridge
 
