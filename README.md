@@ -53,7 +53,7 @@ Les utilisateurs pourront alors accéder à leur bibliothèque de n'importe où 
 
 ------
 
-**Attention** *: ne pas utiliser l'image benibee33/portainer_custom car l'image est bugué et le serveur web n'est pas fonctionnel. C'est pour cette raison que le fichier docker-compose appelle directement l'image officielle portainer/portainer-ce:latest**
+**Attention**, ne pas utiliser l'image benibee33/portainer_custom car l'image est buguée et le serveur web n'est pas fonctionnel. C'est pour cette raison que le fichier docker-compose appelle directement l'image officielle portainer/portainer-ce:latest à la place.
 
 -----
 
