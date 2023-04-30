@@ -1,7 +1,5 @@
 # Docker-bandj
 
-EN COURS - PAS FINI
-
 Présentation de notre projet docker consistant à déployer une plateforme de multimédia entièrement automatisé
 
 Nous aurons dans ce projet docker :
@@ -46,13 +44,6 @@ Les utilisateurs pourront alors accéder à leur bibliothèque de n'importe où 
 
 **Portainer** est une solution de gestion de conteneurs Docker qui offre une interface graphique conviviale pour simplifier le déploiement, la configuration et la maintenance des applications et services Docker. Portainer permet de gérer tout ce qui est rattaché aux conteneurs : réseaux, volumes, registres et autres ressources Docker, sans avoir besoin de maîtriser les commandes Docker en ligne de commande. En intégrant Portainer au projet projet, on peut gérer et superviser facilement l'ensemble de la stack Plex, Jackett, Sonarr, Radarr, Deluge et Tautulli à partir d'un seul et même tableau de bord.
 
-**Note** : aucun container n'est mappé sur l'hôte, les containers communiquent entre eux via un réseau interne bridge
-
-Pour déterminer l'IP d'un container :
-docker ps -a
-docker inspect <container_id> | grep IPAddress
-
-![image](https://user-images.githubusercontent.com/100569015/235373732-e5ac363f-0b3d-434d-a283-293e8d42f1b9.png)
 
 # Inscription Plex
 
@@ -70,7 +61,13 @@ Coller le token dans le fichier "docker-compose.yml" à l'endroit prévu comme i
 
 # Déploiement
 
-Lancer le déploiement : docker compose up -d 
+Cloner l'ensemble de l'arborescence et lancer le déploiement : **docker compose up -d**
+
+**Note** : aucun container n'est mappé sur l'hôte, les containers communiquent entre eux via un réseau interne bridge
+
+Pour déterminer l'IP d'un container :
+docker ps -a
+docker inspect <container_id> | grep IPAddress
 
 # Configuration Plex
 
