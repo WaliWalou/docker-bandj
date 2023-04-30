@@ -1,5 +1,7 @@
 
-# Docker-BandJ : présentation du projet Docker de déploiement d'une plateforme multimédia automatisée.
+# Docker-BandJ
+
+- Présentation du projet Docker de déploiement d'une plateforme multimédia automatisée. -
 
 Dans ce projet on retrouve notamment :
 - **Plex** : Gestionnaire de bibliothèques films / séries
@@ -12,7 +14,7 @@ Dans ce projet on retrouve notamment :
 - **Tautulli** : Monitoring, stats et graphs pour Plex
 - **Portainer** : Gestionnaire de containers Docker
 
-// Extra plus 
+// Extra plus :
 
 - **ChatBot Telegram** : assistant personnel virtuel qui permet d'envoyer des notifications textuelles via l'application Telegram.
 
