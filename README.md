@@ -11,6 +11,18 @@ Nous aurons dans ce projet docker :
 - **Sonarr** : Planificateur de téléchargement de séries
 - **Jackett** : Proxy et indexeur de liens Torrents
 
+Extra :
+- **Tautulli** : Monitoring, stats et graphs pour Plex
+- **Portainer** : Gestionnaire de containers Docker
+
+Note : aucun container n'est mappé sur l'hôte, les containers communiquent entre eux via un réseau interne bridge
+
+Pour déterminer l'IP d'un container :
+docker ps -a
+docker inspect <container_id> | grep IPAddress
+
+![image](https://user-images.githubusercontent.com/100569015/235373732-e5ac363f-0b3d-434d-a283-293e8d42f1b9.png)
+
 A l'aide de ces 5 services, nous pourrons mettre en application le schéma suivant :
 
 ```mermaid
@@ -86,6 +98,9 @@ Configurer un proxy VPN (si disponible) :
 
 ![image](https://user-images.githubusercontent.com/100569015/235353660-e3f8efe2-604d-4fb9-85af-39b387217743.png)
 
+# Notification avec Telegram
+
+Deluge comprend un script shell maison qu'il exécute à chaque téléchargement terminé. Le script envoie une requête à un ChatBot Telegram afin de recevoir la notification directement sur son téléphone. Copier/coller son chat ID et Token Telegram dans le script 
 
 # Configuration Jackett
 
@@ -127,4 +142,14 @@ Le téléchargement se met automatiquement en file d'attente et apparaît dans D
 Après que le téléchargement ait fini, on retrouve le film automatiquement dans l'interface Plex dans la bibliothèque correspondante :
 
 ![image](https://user-images.githubusercontent.com/100569015/235356827-1946e437-fdc4-4111-bd55-f08c379dd248.png)
+
+# Extra avec Tautulli
+
+![image](https://user-images.githubusercontent.com/100569015/235373549-f687c4ac-9ca0-44d2-b747-d6445247b8e8.png)
+
+# Extra Plus avec Portainer
+
+https://portainer_bandj:9443
+
+![image](https://user-images.githubusercontent.com/100569015/235373352-f7f4b9d2-1fa6-4ce9-8775-8e51d59d04a9.png)
 
