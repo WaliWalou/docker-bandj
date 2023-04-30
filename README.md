@@ -40,8 +40,6 @@ Les utilisateurs pourront alors accéder à leur bibliothèque de n'importe où 
 
 Le premier prérequis à respecter est la création d'un compte Plex qui est obligatoire pour héberger l'instance serveur que l'on va déployer avec Docker. Il faut se rendre sur le site https://www.plex.tv et cliquer sur "Sign Up" en haut à droite.
 
-![image](https://user-images.githubusercontent.com/100569015/235345903-9f54927c-7969-475d-b7d5-0fa440c06482.png)
-
 Après avoir procédé à la création du compte Plex et s'y être connecté, il faut se rendre sur https://www.plex.tv/claim/ afin de générer un token de connexion pour associer le compte au serveur. Pour ce faire, copier le token généré qui s'affiche à l'écran :
 
 ![image](https://user-images.githubusercontent.com/100569015/235345967-a5c45d0b-fde6-4eaa-a8d5-fc4688beaafb.png)
