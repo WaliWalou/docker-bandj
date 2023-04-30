@@ -1,9 +1,7 @@
 
-# Docker-BandJ
+# Docker-BandJ : présentation du projet Docker de déploiement d'une plateforme multimédia automatisée.
 
-Présentation du projet Docker consistant à déployer une plateforme de multimédia automatisée.
-
-// Dans ce projet on retrouve notamment :
+Dans ce projet on retrouve notamment :
 - **Plex** : Gestionnaire de bibliothèques films / séries
 - **Deluge** : Client léger et opensource BitTorrent
 - **Radarr** : Planificateur de téléchargement de films
