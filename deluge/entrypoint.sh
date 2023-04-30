@@ -1,8 +1,8 @@
 #!/bin/bash
-
-cp ./telegram.sh /tmp/
-
-chmod +x /config/execute.conf
-chmod +x /tmp/telegram.sh
-
-exec /usr/bin/deluged
+echo "Hello friend."
+if [ -f "/tmp/telegram.sh" ]; then
+  echo "/tmp/telegram.sh found."
+else
+  echo "/tmp/telegram.sh not found."
+fi
+exec /init
