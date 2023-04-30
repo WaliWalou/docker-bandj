@@ -124,4 +124,7 @@ Le téléchargement se met automatiquement en file d'attente et apparaît dans D
 
 ![image](https://user-images.githubusercontent.com/100569015/235355774-309bfaec-f798-4275-9879-01b461fbd02c.png)
 
+Après que le téléchargement ait fini, on retrouve le film automatiquement dans l'interface Plex dans la bibliothèque correspondante :
+
+![image](https://user-images.githubusercontent.com/100569015/235356827-1946e437-fdc4-4111-bd55-f08c379dd248.png)
 
