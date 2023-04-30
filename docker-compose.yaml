@@ -7,7 +7,7 @@ services:
       context: ./plex
     env_file: ./vars.env
     environment:
-      - PLEX_CLAIM=claim-GpjyGRFCU7E715KKsZbH
+      - PLEX_CLAIM=claim-XXXXXXXXXXXXX
       - ADVERTISE_IP=http://plex_bandj:32400/
     volumes:
       - ./BandJ/plex/config:/config
