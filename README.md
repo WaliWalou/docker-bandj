@@ -15,14 +15,6 @@ Extra :
 - **Tautulli** : Monitoring, stats et graphs pour Plex
 - **Portainer** : Gestionnaire de containers Docker
 
-Note : aucun container n'est mappé sur l'hôte, les containers communiquent entre eux via un réseau interne bridge
-
-Pour déterminer l'IP d'un container :
-docker ps -a
-docker inspect <container_id> | grep IPAddress
-
-![image](https://user-images.githubusercontent.com/100569015/235373732-e5ac363f-0b3d-434d-a283-293e8d42f1b9.png)
-
 A l'aide de ces 5 services, nous pourrons mettre en application le schéma suivant :
 
 ```mermaid
@@ -39,7 +31,7 @@ F --> G(Plex)
 
 **Jackett** va s'assurer de tenir à jour les liens des sites que nous lui donnons en index ainsi que de communiquer directement avec les sites web en faisant les requêtes demandées par **Sonarr** et **Radarr** qui vont quand à eux, tenir un agenda des films et séries demandé par l'utilisateur afin de les trouver, dans la qualité et la langue demandée, et les télécharger une fois disponible sur les sites de torrent mis en index
 
-Une fois le lien torrent trouvé, il va être envoyé à **Deluge** qui va télécharger ce torrent via son client qui passera par un proxy VPN paramétrer directement sur le service (dans notre cas NordVPN #sponso#AD) 
+Une fois le lien torrent trouvé, il va être envoyé à **Deluge** qui va télécharger ce torrent via son client qui passera par un proxy VPN paramétré (dans notre cas NordVPN #sponso#AD) 
 
 Ces films/séries seront déposer dans un dossier **/BandJ/downloadsBandJ** perçu par les conteneurs comme **/downloads**
 Les films sont dans **/downloads/movies** et les épisodes de séries dans **/downloads/series**
@@ -47,6 +39,20 @@ Chaque film ou série aura droit à un dossier propre à son nom
 
 **Plex** va pouvoir récupérer et lire les fichier *.mp4* dans ses dossiers et les afficher dans sa bibliothèque de films et séries
 Les utilisateurs pourront alors accéder à leur bibliothèque de n'importe où en se connectant à ce compte Plex et regarder leur film préféré depuis un Google Chromecast ou un PC...
+
+**Extra :**
+
+**Tautulli** est un outil de surveillance et d'analyse dédié à **Plex Media Server**. Il permet de suivre les activités des utilisateurs, les statistiques d'utilisation, les historiques de lecture, et bien plus encore. Grâce à Tautulli, il est possible de garder un œil sur les performances du serveur Plex et d'assurer que les utilisateurs bénéficient de la meilleure expérience possible en matière de streaming.
+
+**Portainer** est une solution de gestion de conteneurs Docker qui offre une interface graphique conviviale pour simplifier le déploiement, la configuration et la maintenance des applications et services Docker. Portainer permet de gérer tout ce qui est rattaché aux conteneurs : réseaux, volumes, registres et autres ressources Docker, sans avoir besoin de maîtriser les commandes Docker en ligne de commande. En intégrant Portainer au projet projet, on peut gérer et superviser facilement l'ensemble de la stack Plex, Jackett, Sonarr, Radarr, Deluge et Tautulli à partir d'un seul et même tableau de bord.
+
+**Note** : aucun container n'est mappé sur l'hôte, les containers communiquent entre eux via un réseau interne bridge
+
+Pour déterminer l'IP d'un container :
+docker ps -a
+docker inspect <container_id> | grep IPAddress
+
+![image](https://user-images.githubusercontent.com/100569015/235373732-e5ac363f-0b3d-434d-a283-293e8d42f1b9.png)
 
 # Inscription Plex
 
@@ -146,6 +152,11 @@ Après que le téléchargement ait fini, on retrouve le film automatiquement dan
 # Extra avec Tautulli
 
 ![image](https://user-images.githubusercontent.com/100569015/235373549-f687c4ac-9ca0-44d2-b747-d6445247b8e8.png)
+
+Tautulli génère automatiquement des statistiques et graphiques concernant l'utilisation du serveur Plex, avec la possibilité d'affiner ou filtrer les résultats.
+
+![image](https://user-images.githubusercontent.com/100569015/235374022-697b137d-d558-47b7-b4da-8f1d79f0cd1a.png)
+
 
 # Extra Plus avec Portainer
 
