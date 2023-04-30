@@ -109,6 +109,17 @@ Copier chaque lien d'indexeur ajouté dans Jackett (bouton "Copy Torznab feed") 
 
 http://sonarr_bandj:8989/
 
-![image](https://user-images.githubusercontent.com/100569015/235353043-35dcfe45-ecd3-4b5e-9353-a63110902d1d.png)
+Faire la même chose que pour Radarr.
 
-Copier chaque lien d'indexeur ajouté dans Jackett (bouton "Copy Torznab feed") et l'ajouter dans Sonarr (-> Add indexer - Torznab) ainsi que l'API Key :
+
+# C'est parti pour un test avec Radarr !
+
+Chercher et ajouter un nouveau film sur Radarr :
+
+![image](https://user-images.githubusercontent.com/100569015/235355736-32694c8c-d8b0-4610-a828-4159d0c83fda.png)
+
+Le téléchargement se met automatiquement en file d'attente et apparaît dans Deluge :
+
+![image](https://user-images.githubusercontent.com/100569015/235355774-309bfaec-f798-4275-9879-01b461fbd02c.png)
+
+
