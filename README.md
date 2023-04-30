@@ -42,13 +42,15 @@ Le premier prérequis à respecter est la création d'un compte Plex qui est obl
 
 ![image](https://user-images.githubusercontent.com/100569015/235345903-9f54927c-7969-475d-b7d5-0fa440c06482.png)
 
-Après avoir procédé à la création du compte Plex et s'y être connecté, il faut se rendre sur https://www.plex.tv/claim/ afin de générer un token de connexion pour associer le compte au serveur. Pour ce faire, copier le token généré qui s'affiche à l'écran et le coller dans le fichier docker-compose.yml à l'endroit prévu comme indiqué ci-dessous :
+Après avoir procédé à la création du compte Plex et s'y être connecté, il faut se rendre sur https://www.plex.tv/claim/ afin de générer un token de connexion pour associer le compte au serveur. Pour ce faire, copier le token généré qui s'affiche à l'écran :
 
 ![image](https://user-images.githubusercontent.com/100569015/235345967-a5c45d0b-fde6-4eaa-a8d5-fc4688beaafb.png)
 
 **Attention** : le token expire au bout de 4 minutes.
 
-SCREEN docker-compose token plex service
+Coller le token dans le fichier "docker-compose.yml" à l'endroit prévu comme indiqué ci-dessous :
+
+![image](https://user-images.githubusercontent.com/100569015/235352543-dd1e4e73-d83c-4b93-8bf1-60dc6e271727.png)
 
 # Configuration Plex
 
@@ -56,26 +58,47 @@ http://plex_bandj:32400/
 
 Ouvrir la page web du serveur Plex (http / port 32400). Si la page de configuration ne s'affiche pas automatiquement, se déconnecter du compte et se reconnecter aussitôt.
 
-La page de configuration va s'afficher :
-
-![image](https://user-images.githubusercontent.com/100569015/235352195-bcdc1073-762d-4ead-a9f8-552f21849536.png)
+La page de configuration va s'afficher automatiquement, cliquer sur le bouton "J'ai compris !" pour entamer la configuration du serveur Plex.
 
 Créer deux bibliothèques : une bibliothèque "Films" et une bibliothèque "Séries" et faire pointer respectivement vers les chemins suivants :
 
 ![image](https://user-images.githubusercontent.com/100569015/235352317-7dc0d4be-dd41-4806-815b-6ba2ae99d41d.png)
 
+# Configuration Deluge
+
+http://deluge_bandj:8112/
+
+Mot de passe par défaut : deluge
+
+![image](https://user-images.githubusercontent.com/100569015/235352874-8ca8e731-b9b1-4315-a784-f904a1d52030.png)
+
+![image](https://user-images.githubusercontent.com/100569015/235352950-dcb165dd-a063-4ffd-8d75-f835b21bf9c7.png)
+
+
 # Configuration Jackett
 
 http://jackett_bandj:9117/UI/Dashboard
 
-# Configuration Deluge
+Ajouter plusieurs indexeurs Torrent de type "Public" et récupérer l'API Key en haut de page :
 
-http://deluge_bandj:8112/
+![image](https://user-images.githubusercontent.com/100569015/235353138-0459a0f9-22b1-48a1-96e0-d48c3a20a76b.png)
+
 
 # Configuration Radarr
 
 http://radarr_bandj:7878/activity/queue
 
+![image](https://user-images.githubusercontent.com/100569015/235353004-edbe7f3b-83f9-4d31-87c7-361d2d5df154.png)
+
+Copier chaque lien d'indexeur ajouté dans Jackett (bouton "Copy Torznab feed") et l'ajouter dans Radarr (-> Add indexer - Torznab) ainsi que l'API Key :
+
+![image](https://user-images.githubusercontent.com/100569015/235353230-4c93dd51-c275-4e2b-a4d1-abc9df3b44f4.png)
+
+
 # Configuration Sonarr
 
 http://sonarr_bandj:8989/
+
+![image](https://user-images.githubusercontent.com/100569015/235353043-35dcfe45-ecd3-4b5e-9353-a63110902d1d.png)
+
+Copier chaque lien d'indexeur ajouté dans Jackett (bouton "Copy Torznab feed") et l'ajouter dans Sonarr (-> Add indexer - Torznab) ainsi que l'API Key :
