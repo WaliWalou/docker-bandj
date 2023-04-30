@@ -120,6 +120,8 @@ Ajouter plusieurs indexeurs Torrent de type "Public" et récupérer l'API Key en
 
 # Configuration Radarr
 
+Ajouter un logiciel client de téléchargement Torrent (Deluge ici en l'occurence) :
+
 http://radarr_bandj:7878/activity/queue
 
 ![image](https://user-images.githubusercontent.com/100569015/235353004-edbe7f3b-83f9-4d31-87c7-361d2d5df154.png)
@@ -133,7 +135,7 @@ Copier chaque lien d'indexeur ajouté dans Jackett (bouton "Copy Torznab feed") 
 
 http://sonarr_bandj:8989/
 
-Faire la même chose que pour Radarr.
+Répéter les même étapes effectuées précédemment pour Radarr
 
 
 # C'est parti pour un test avec Radarr !
