@@ -46,7 +46,7 @@ Les utilisateurs pourront alors accéder à leur bibliothèque de n'importe où 
 
 **Extra plus :** 
 
-**Telegram** un script bash a été intégré pour être exécuté par Deluge lorsqu'un téléchargement est terminé : un chatBot enverra directement une notification à l'utilisateur par l'application.
+**ChatBot Telegram** permet de recevoir directement une notification par l'application Telegram lorsqu'un téléchargement est terminé : un script bash a été intégré pour être exécuté par Deluge.
 
 # Inscription Plex
 
