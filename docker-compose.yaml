@@ -1,0 +1,83 @@
+version: '3.9'
+services:
+  plex:
+    image: benibee33/plex_custom:latest
+    container_name: plex_bandj
+    build:
+      context: ./plex
+    env_file: ./vars.env
+    environment:
+      - PLEX_CLAIM=claim-fp8rpggsQkfWQ_etQLm5
+      - ADVERTISE_IP=http://192.168.1.14:32400/
+      - TZ=TZ
+    volumes:
+      - ./BandJ/plex/config:/config
+      - ./BandJ/plex/transcode:/transcode
+      - ./BandJ/plex/media:/media
+      - ./BandJ/downloadsBandJ:/downloads
+    ports:
+      - 32400:32400
+
+  jackett:
+    image: benibee33/jackett_custom
+    container_name: jackett_bandj
+    build:
+      context: ./jackett
+    env_file: ./vars.env
+    volumes:
+      - ./BandJ/jackett/config:/config
+      - ./BandJ/downloadsBandJ:/downloads
+    ports:
+      - 9117:9117
+
+  sonarr:
+    image: benibee33/sonarr_custom
+    container_name: sonarr_bandj
+    build:
+      context: ./sonarr
+    env_file: ./vars.env
+    environment:
+      - PUID=PUID
+      - PGID=PGID
+      - TZ=TZ
+    volumes:
+      - ./BandJ/sonarr/config:/config
+      - ./BandJ/tvshows:/tv
+      - ./BandJ/downloadsBandJ/series:/downloads/series
+    ports:
+      - 8989:8989
+
+  radarr:
+    image: benibee33/radarr_custom
+    container_name: radarr_bandj
+    build:
+      context: ./radarr
+    env_file: ./vars.env
+    environment:
+      - PUID=PUID
+      - PGID=PGID
+      - TZ=TZ
+    volumes:
+      - ./BandJ/radarr/config:/config
+      - ./BandJ/movies:/movies
+      - ./BandJ/downloadsBandJ/movies:/downloads/movies
+    ports:
+      - 7878:7878
+
+  deluge:
+    image: benibee33/deluge_custom
+    container_name: deluge_bandj
+    build:
+      context: ./deluge
+    env_file: ./vars.env
+    environment:
+      - PUID=PUID
+      - PGID=PGID
+      - TZ=TZ
+    volumes:
+      - ./BandJ/deluge/config:/config
+      - ./BandJ/downloadsBandJ:/downloads
+    ports:
+      - 8112:8112
+      - 58846:58846
+      - 58946:58946
