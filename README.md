@@ -70,9 +70,17 @@ http://deluge_bandj:8112/
 
 Mot de passe par défaut : deluge
 
+Ajouter les plugins "Label" et "Execute" dans les préférences :
+
 ![image](https://user-images.githubusercontent.com/100569015/235352874-8ca8e731-b9b1-4315-a784-f904a1d52030.png)
 
+Créer deux nouveaux labels pour Sonarr et Radarr :
+
 ![image](https://user-images.githubusercontent.com/100569015/235352950-dcb165dd-a063-4ffd-8d75-f835b21bf9c7.png)
+
+Configurer un proxy VPN (si disponible) :
+
+![image](https://user-images.githubusercontent.com/100569015/235353660-e3f8efe2-604d-4fb9-85af-39b387217743.png)
 
 
 # Configuration Jackett
