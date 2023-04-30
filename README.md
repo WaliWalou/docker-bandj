@@ -1,5 +1,5 @@
 
-# Docker-bandj
+# Docker-BandJ
 
 Présentation du projet Docker consistant à déployer une plateforme de multimédia automatisée.
 
@@ -78,13 +78,26 @@ Le premier prérequis à respecter est la création d'un compte Plex qui est obl
 
 - Pour déployer la stack, télécharger ou cloner avec git l'ensemble de l'arborescence du repo GitHub.
 
-- Lancer ensuite le déploiement : **docker compose up -d**
+- Déployer maintenant le projet en ligne de commandes sur l'hôte Docker :
+
+**docker-compose build --no-cache**
+**docker compose up -d**
 
 **Note** : aucun container n'est mappé sur l'hôte, les containers communiquent entre eux via un réseau interne bridge.
 
 Pour déterminer l'IP d'un container :
 ***docker ps -a
 docker inspect <container_id> | grep IPAddress***
+
+**Attention** : si une erreur de droits apparaît dans les logs pour l'accès au répertoire de configuration Plex     **--->**
+**plex_bandj   | OSError: [Errno 13] Permission denied: '/config/Library/Application Support/Plex Media Server/Logs/PMS Plugin Logs**'
+
+Taper la commande suivante sur l'hôte Docker, depuis le répertoire racine là où le projet a été cloné :
+***sudo chown -R 911:911 ./BandJ/plex/config***
+
+Redémarrer ensuite les containers : 
+***docker-compose down
+docker-compose up -d***
 
 ------
 
