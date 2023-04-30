@@ -50,13 +50,15 @@ Coller le token dans le fichier "docker-compose.yml" à l'endroit prévu comme i
 
 ![image](https://user-images.githubusercontent.com/100569015/235352543-dd1e4e73-d83c-4b93-8bf1-60dc6e271727.png)
 
+# Déploiement
+
+Lancer le déploiement : docker compose up -d 
+
 # Configuration Plex
 
 http://plex_bandj:32400/
 
-Ouvrir la page web du serveur Plex (http / port 32400). Si la page de configuration ne s'affiche pas automatiquement, se déconnecter du compte et se reconnecter aussitôt.
-
-La page de configuration va s'afficher automatiquement, cliquer sur le bouton "J'ai compris !" pour entamer la configuration du serveur Plex.
+Ouvrir la page web du serveur Plex : si la page de configuration ne s'affiche pas automatiquement, se déconnecter du compte et se reconnecter aussitôt. La page de configuration va s'afficher automatiquement, cliquer sur le bouton "J'ai compris !" pour entamer la configuration du serveur Plex.
 
 Créer deux bibliothèques : une bibliothèque "Films" et une bibliothèque "Séries" et faire pointer respectivement vers les chemins suivants :
 
