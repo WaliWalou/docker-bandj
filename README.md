@@ -104,7 +104,6 @@ Copier/coller son chat ID et Token Telegram dans le script **telegram.sh** :
 
 ![image](https://user-images.githubusercontent.com/100569015/235374145-fe6ad79a-64b4-40be-9607-e58ad37f926f.png)
 
-
 Configurer un proxy VPN (si disponible) :
 
 ![image](https://user-images.githubusercontent.com/100569015/235353660-e3f8efe2-604d-4fb9-85af-39b387217743.png)
@@ -150,6 +149,10 @@ Le téléchargement se met automatiquement en file d'attente et apparaît dans D
 Après que le téléchargement ait fini, on retrouve le film automatiquement dans l'interface Plex dans la bibliothèque correspondante :
 
 ![image](https://user-images.githubusercontent.com/100569015/235356827-1946e437-fdc4-4111-bd55-f08c379dd248.png)
+
+Notification Telegram reçue :
+
+![image](https://user-images.githubusercontent.com/100569015/235374816-7fb9900f-cae2-4764-88b7-07cd48520b5b.png)
 
 # Extra avec Tautulli
 
