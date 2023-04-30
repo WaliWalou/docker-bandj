@@ -1,8 +1,8 @@
 # Docker-bandj
 
-Présentation de notre projet docker consistant à déployer une plateforme de multimédia entièrement automatisé
+Présentation du projet Docker consistant à déployer une plateforme de multimédia automatisée.
 
-Nous aurons dans ce projet docker :
+Dans ce projet on retrouve notamment :
 - **Plex** : Gestionnaire de bibliothèques films / séries
 - **Deluge** : Client léger et opensource BitTorrent
 - **Radarr** : Planificateur de téléchargement de films
@@ -13,7 +13,7 @@ Extra :
 - **Tautulli** : Monitoring, stats et graphs pour Plex
 - **Portainer** : Gestionnaire de containers Docker
 
-A l'aide de ces 5 services, nous pourrons mettre en application le schéma suivant :
+Le schéma suivant met en évidence l'interconnexion et le fonctionnement entre les 5 services principaux :
 
 ```mermaid
 graph LR
@@ -46,6 +46,7 @@ Les utilisateurs pourront alors accéder à leur bibliothèque de n'importe où 
 **Portainer** est une solution de gestion de conteneurs Docker qui offre une interface graphique conviviale pour simplifier le déploiement, la configuration et la maintenance des applications et services Docker. Portainer permet de gérer tout ce qui est rattaché aux conteneurs : réseaux, volumes, registres et autres ressources Docker, sans avoir besoin de maîtriser les commandes Docker en ligne de commande. En intégrant Portainer au projet projet, on peut gérer et superviser facilement l'ensemble de la stack Plex, Jackett, Sonarr, Radarr, Deluge et Tautulli à partir d'un seul et même tableau de bord.
 
 Attention, ne pas utiliser l'image benibee33/portainer_custom car l'image est bugué et le serveur web n'est pas fonctionnel. C'est pour cette raison que le fichier docker-compose appelle directement l'image officielle portainer/portainer-ce:latest
+
 
 **Extra plus :** 
 
